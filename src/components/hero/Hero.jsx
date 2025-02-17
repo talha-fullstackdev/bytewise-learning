@@ -1,7 +1,12 @@
 import React from 'react'
+import HeroPara from './HeroPara'
+import HeroImage from './HeroImage'
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div>
+        <HeroPara/>
+        <HeroImage/>
+    </div>
   )
 }
 
