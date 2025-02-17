@@ -1,8 +1,9 @@
 import './App.css'
+import HomePage from './pages/HomePage'
 function App() {
   return (
     <>
-     <h1>bytewise learning</h1>
+     <HomePage/>
     </>
   )
 }
