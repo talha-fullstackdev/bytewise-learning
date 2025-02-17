@@ -12,8 +12,8 @@ const ProductsCards = () => {
   };
 
   return (
-    <div>
-      <div className="flex gap-10">
+    <div className="mt-6">
+      <div className="flex justify-center gap-4 text-md">
         <button onClick={() => handleFilter("All")}>All</button>
         <button onClick={() => handleFilter("App")}>App</button>
         <button onClick={() => handleFilter("Product")}>Product</button>
@@ -22,13 +22,13 @@ const ProductsCards = () => {
       </div>
 
       {/* Display Cards */}
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap mt-4 gap-6 md:justify-around">
         {filteredData.length > 0 ? (
           filteredData.map((item, index) => (
-            <div className="w-[400px]" key={index}>
-              <img src={item.image} alt={item.name} />
-              <h2>{item.name}</h2>
-              <p>{item.para}</p>
+            <div className="w-[400px] flex flex-col items-center" key={index}>
+              <img src={item.image} alt={item.name} className="w-[350px] md:w-[450px]" />
+              <h2 className="self-start ml-6 font-semibold text-xl">{item.name}</h2>
+              <p className="self-start ml-6 mt-3 text-md">{item.para}</p>
             </div>
           ))
         ) : (
