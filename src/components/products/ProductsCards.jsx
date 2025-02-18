@@ -6,7 +6,7 @@ const ProductsCards = () => {
   const [zoomed, setZoomed] = useState(false);
 
   const handleFilter = (category) => {
-    setZoomed(true);  // Trigger zoom effect when filtering
+    setZoomed(true); 
     if (category === "All") {
       setFilteredData(data);
     } else {
@@ -22,7 +22,6 @@ const ProductsCards = () => {
 
   return (
     <div className="mt-6 px-4 md:px-10">
-      {/* Filter Buttons */}
       <div className="flex justify-center gap-6 text-md mb-6 flex-wrap">
         <button className="cursor-pointer hover:text-[#045f66]" onClick={() => handleFilter("All")}>All</button>
         <button className="cursor-pointer hover:text-[#045f66]" onClick={() => handleFilter("App")}>App</button>
@@ -31,7 +30,6 @@ const ProductsCards = () => {
         <button className="cursor-pointer hover:text-[#045f66]" onClick={() => handleFilter("Book")}>Books</button>
       </div>
 
-      {/* Display Cards */}
       <div className="flex flex-wrap mt-4 gap-6 justify-center">
         {filteredData.length > 0 ? (
           filteredData.map((item, index) => (
