@@ -66,7 +66,7 @@ const ContactMe = () => {
   ];
 
   return (
-    <div className="bg-[#078791] w-full max-w-[400px] m-auto md:m-0 p-6 rounded-lg shadow-lg flex flex-col items-center gap-6">
+    <div className="bg-[#078791] w-full md:ml-32 max-w-[400px] m-auto md:m-0 p-6 rounded-lg shadow-lg flex flex-col items-center gap-6">
       {data.map((item, index) => (
         <div
           key={index}

@@ -50,7 +50,7 @@ const Form = () => {
         ></textarea>
 
         {/* Submit Button */}
-        <button className="w-full bg-[#078791] text-white py-3 rounded-lg font-semibold hover:bg-[#056b6f] transition">
+        <button className="w-[200px] self-center bg-[#078791] text-white py-3 rounded-lg font-semibold hover:bg-[#056b6f] transition">
           Send Message
         </button>
       </div>
