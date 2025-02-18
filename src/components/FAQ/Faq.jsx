@@ -17,7 +17,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="mx-auto mt-6 p-4 md:flex md:m-0 md:justify-center md:gap-4">
+    <div className="mx-auto md:pt-10 p-4 md:flex md:m-0 md:justify-center md:gap-4">
       {/* FAQ Header */}
       <div className="mb-6 md:max-w-[300px]">
         <h2 className="text-2xl md:text-4xl font-semibold text-slate-600">
