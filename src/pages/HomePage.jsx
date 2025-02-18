@@ -5,6 +5,7 @@ import Portfolio from '../components/portfolio/Portfolio.jsx'
 import ProductsCards from '../components/products/ProductsCards.jsx'
 import Faq from '../components/FAQ/Faq.jsx'
 import Contact from '../components/contact form/Contact.jsx'
+import Footer from '../components/footer/Footer.jsx'
 const HomePage = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const HomePage = () => {
     <ProductsCards/>
     <Faq/>
     <Contact/>
+    <Footer/>
     </>
   )
 }
