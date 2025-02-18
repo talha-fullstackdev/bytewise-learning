@@ -13,35 +13,35 @@ const Faq = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto mt-6 p-4">
+    <div className=" mx-auto mt-6 p-4 md:flex md:m-0 md:justify-center md:gap-4">
       {/* FAQ Header */}
-      <div className="mb-6">
-        <h2 className="text-2xl font-semibold">
-          Frequently Asked <span className="text-blue-600">Questions</span>
+      <div className="mb-6 md:max-w-[300px]">
+        <h2 className="text-2xl md:text-4xl font-semibold text-slate-600">
+          Frequently Asked <span className=" md:text-4xl text-black">Questions</span>
         </h2>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 mt-2 md:text-xl">
           Discover answers to common inquiries about our services and offerings.
         </p>
       </div>
 
       {/* FAQ List */}
-      <div className="space-y-4">
+      <div className="space-y-6 ">
         {data.map((item) => (
-          <div key={item.id} className="border-b pb-3">
+          <div key={item.id} className="border pt-3 pb-3 bg-gray-200 rounded-lg">
             {/* Question Section */}
             <div
-              className="flex justify-between items-center cursor-pointer"
+              className="flex justify-between items-center cursor-pointer px-2"
               onClick={() => handleDisplay(item.id)}
             >
-              <p className="text-lg font-medium">{item.id}. {item.question}</p>
-              <button className="text-xl">
+              <p className="text-sm md:text-lg font-medium "><span className="text-[#078791]">{item.id}</span>. {item.question}</p>
+              <button className="md:text-xl text-sm">
                 {visible[item.id] ? <IoIosArrowUp /> : <IoIosArrowDown />}
               </button>
             </div>
 
             {/* Answer Section (only shown when `visible[item.id]` is true) */}
             {visible[item.id] && (
-              <p className="mt-2 text-gray-700">{item.answer}</p>
+              <p className="mt-2 text-gray-700 text-sm md:text-lg md:w-[590px] px-2 ">{item.answer}</p>
             )}
           </div>
         ))}
