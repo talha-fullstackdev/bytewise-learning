@@ -1,8 +1,12 @@
 import React from 'react'
-
+import FooterLogo from './FooterLogo'
+import FooterList from './FooterList'
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>
+<FooterLogo/>
+<FooterList/>
+    </div>
   )
 }
 
