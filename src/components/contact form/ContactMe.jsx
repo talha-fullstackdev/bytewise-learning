@@ -70,14 +70,14 @@ const ContactMe = () => {
       {data.map((item, index) => (
         <div
           key={index}
-          className="w-full flex items-center gap-4 bg-[#079799] p-4 rounded-lg shadow-md hover:shadow-lg transition"
+          className="w-full flex items-center gap-4 bg-[#079799] p-4 rounded-lg shadow-md hover:shadow-lg transition text-white"
         >
           <div className="text-3xl bg-blue-100 p-3 rounded-full text-[#078791]">
             {item.icon}
           </div>
           <div>
             <p className="text-lg font-semibold">{item.name}</p>
-            <p className="text-gray-600">{item.contact}</p>
+            <p>{item.contact}</p>
           </div>
         </div>
       ))}

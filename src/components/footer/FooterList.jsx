@@ -73,7 +73,7 @@ const FooterList = () => {
           <h2 className="text-lg font-semibold mb-2 md:text-xl md:font-semibold">{section.heading}</h2>
           <ul className="text-white text-sm space-y-2">
             {section.links.map((link, i) => (
-              <li key={i} className="hover:text-[#078791]  transition cursor-pointer md:text-md">
+              <li key={i} className="hover:underline hover:underline-offset-2  transition cursor-pointer md:text-md">
                 {link}
               </li>
             ))}
