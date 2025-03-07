@@ -34,7 +34,7 @@ const ProductsCards = () => {
         {filteredData.length > 0 ? (
           filteredData.map((item, index) => (
             <div
-              className={`w-full sm:w-[300px] md:w-[350px] lg:w-[400px] flex flex-col items-center bg-white p-4 rounded-lg shadow-lg mb-6 transform ${zoomed ? "scale-105" : ""} transition-transform duration-500 ease-in-out`}
+              className={`w-full sm:w-[300px] md:w-[350px]  flex flex-col items-center bg-white p-4 rounded-lg shadow-lg mb-6 transform ${zoomed ? "scale-105" : ""} transition-transform duration-500 ease-in-out`}
               key={index}
             >
               <img src={item.image} alt={item.name} className="w-full h-auto rounded-md mb-4" />

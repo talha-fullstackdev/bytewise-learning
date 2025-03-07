@@ -31,8 +31,11 @@ const Hero = () => {
         <HeroImage />
       </div>
       <div className="flex flex-col flex-wrap gap-8 pt-10 bg-[#045f66] md:bg-white md:flex-row md:gap-2 md:pt-0 md:justify-around ">
-        {data.map((item,index) => (
-          <div key={index} className="bg-[#078791] p-10 md:py-20 w-[300px] ml-12 md:ml-0 rounded-2xl flex flex-col items-center text-slate-300 font-semibold md:relative md:bottom-[120px] shadow-2xl">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="bg-[#078791] p-10 md:py-20 w-[300px] ml-12 md:ml-0 rounded-2xl flex flex-col items-center text-slate-300 font-semibold md:relative md:bottom-[120px] shadow-2xl"
+          >
             <span className="text-2xl">{item.icons}</span>
             <p className="text-2xl mt-2 text-center">{item.para}</p>
           </div>
