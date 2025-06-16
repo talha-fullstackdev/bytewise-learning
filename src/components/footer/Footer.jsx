@@ -23,7 +23,7 @@ const Footer = () => {
         <FooterList />
       </div>
       <p className="text-center text-sm md:text-lg mt-6 border-t border-gray-700 pt-4">
-        © 2025 Bytewise Learning. All Rights Reserved.
+        © 2025 Bytewise Learning. All Rights Reserved talha nawaz.
       </p>
     </footer>
   );
